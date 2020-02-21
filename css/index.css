@@ -176,7 +176,7 @@ nav .nav-container {
   flex-direction: column;
   width: 900px;
   padding: 1% 0;
-  height: 18vh;
+  height: 15vh;
 }
 nav .nav-container .links {
   display: flex;
@@ -190,7 +190,7 @@ nav .nav-container a {
   font-family: 'Ubuntu', sans-serif;
 }
 nav .nav-container a:hover {
-  color: #23293B;
+  color: #5E6164;
 }
 nav .nav-container .logo a {
   font-size: 3.2rem;
@@ -198,7 +198,7 @@ nav .nav-container .logo a {
 }
 @media (max-width: 500px) {
   nav .nav-container {
-    padding-bottom: 0;
+    padding: 2% 10%;
     flex-direction: column;
   }
   nav .nav-container div.links {
@@ -216,6 +216,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -232,6 +236,15 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -258,6 +271,32 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: block;
+  text-align: center;
+  background-color: #22283A;
+  cursor: pointer;
+  padding: 3%;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid #22283A;
+  color: #F6F7F8;
+  width: 35%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -266,4 +305,18 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 15px;
+    margin-top: 4%;
+  }
 }

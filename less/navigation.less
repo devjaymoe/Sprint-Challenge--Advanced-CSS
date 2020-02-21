@@ -11,7 +11,7 @@ nav{
         flex-direction: column;
         width: 900px;
         padding: 1% 0;
-        height: 18vh;
+        height: 15vh;
 
         .links {
             .flex-layout(space-between, center);
@@ -22,15 +22,15 @@ nav{
             color: @nav-font;
             font-family: 'Ubuntu', sans-serif;
             &:hover{
-                color: @ebony-clay;
+                color: @shuttle-gray;
             }//psudo closer
         }//a closer
         .logo a {
             font-size: 3.2rem;
             font-family: 'Russo One', sans-serif;
         }//logo size
-        @media @mobile {
-            padding-bottom: 0;
+        @media @phone {
+            padding: 2% 10%;
             flex-direction: column;
 
             div.links {
